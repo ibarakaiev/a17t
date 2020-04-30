@@ -44,6 +44,7 @@
   scroll-behavior: smooth;
 }
 
+/* purgecss start ignore */
 @each $tone in neutral, positive, warning, critical, info, urge {
   .\~$(tone) {
     --color-content: var(--color-$(tone)-normal-content);
@@ -73,3 +74,4 @@
     --fallback-box-shadow: var(--fallback-box-shadow-$(priority));
   }
 }
+/* purgecss end ignore */
